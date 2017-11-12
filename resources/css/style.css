@@ -37,9 +37,6 @@ ul li {
   display:inline;
   padding: 0 1rem;
 }
-.truncated-menu {
-  display:none;
-}
 .flex-container {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   height: 30rem;
@@ -96,7 +93,6 @@ h1 {
   padding:0.5rem 1.25rem;
 }
 .info {
-
 width: 35%;
 }
 p{
@@ -104,7 +100,7 @@ p{
   margin-top: 1rem;
 }
 footer {
-    background-color: green;
+    background-color: azure;
     padding: 4rem 1rem 4rem 4rem;
     display: flex;
     align-items: center;
@@ -112,4 +108,110 @@ footer {
 }
 footer div {
   margin-left: 1rem;
+}
+@media only screen and (max-width:1024px){
+  nav {
+    padding: 1rem 0;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    position:relative;
+    top: -.3rem;
+    left: 0rem;
+    height:2rem;
+    width: 100%;
+ }
+  .main-banner {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    margin-top: 14rem;
+    margin-left: 22rem;
+    line-height: 2.4rem;
+ }
+  h1 {
+    margin:0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+nav .truncated-menu {
+  display:none;
+}
+@media only screen and (max-width:375px){
+  nav {
+    width: 100%;
+  }
+  .menu ul {
+    display:none;
+  }
+  nav span {
+    display: none;
+  }
+  .menu ul.truncated-menu {
+    display: block;
+  }
+  .flex-container {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .main-banner {
+    padding: 0rem 0rem;
+    text-align: center;
+    margin-top: 12rem;
+    margin-left: 0rem;
+    width: 99.9%;
+    line-height: 1.2rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin:1rem 0rem 1rem 0rem;
+}
+.supporting  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service {
+  margin-top: 3.77rem;
+  font-size: 0.77rem;
+  font-family: Helvetica;
+}
+.service div {
+    margin-top: 1.54rem;
+}
+.supporting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.77rem;
+}
+.title {
+  font-size: 1rem;
+  color: white;
+  width:87%;
+  text-align: center;
+}
+p{
+  margin-right: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-size: 0.77rem;
+}
+.info {
+width: 99.9%;
+}
+footer div {
+  display:none;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 4rem 4rem;
+}
 }
